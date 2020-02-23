@@ -1,0 +1,36 @@
+.contact {
+  text-align: center;
+  background: url("../../images/clouds.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 150px;
+}
+
+.iconsWrapper {
+  max-width: 50%;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  flex-direction: row;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  margin: 70px 0 0 30px;
+  margin-left: auto;
+  margin-right: auto;
+
+  a {
+    color: inherit;
+    display: inline-block;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    
+    &:hover {
+       color: #653399;
+      -webkit-transform: rotate(360deg) scale(1.5);
+      transform: rotate(360deg) scale(1.5);
+    }
+  }
+}
