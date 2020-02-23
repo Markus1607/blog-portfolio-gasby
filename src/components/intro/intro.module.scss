@@ -1,0 +1,108 @@
+.intro {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  overflow-x: hidden;
+  background-image: url("../../assets/videos/Snapshots/typing.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 1;
+}
+
+.text {
+  position: absolute;
+  z-index: 2;
+  color: white;
+  background: rgba(0, 0, 0, 0.4);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+
+  h1 {
+    font-weight: 900;
+    font-size: 6em;
+    color: rgba(255, 255, 255, 0.9);
+    text-shadow: 2px 2px 3px #000;
+  }
+
+  .img {
+    background-image: url("../../assets/images/scroll-icon.png");
+    background-position: center center;
+    background-size: contain;
+    max-width: 30px;
+    height: 38px;
+    width: 30px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    margin-top: 80px;
+    -webkit-animation: down 0.8s infinite linear;
+    animation: down 0.8s infinite linear;
+
+    &:hover {
+      -webkit-animation: none;
+      animation: none;
+      cursor: pointer;
+    }
+  }
+}
+
+@-webkit-keyframes down {
+  100% {
+    -webkit-transform: translateY(10px);
+    transform: translateY(10px);
+  }
+}
+@keyframes down {
+  100% {
+    -webkit-transform: translateY(10px);
+    transform: translateY(10px);
+  }
+}
+//   @media screen and (max-width: 768px) {
+//     .navbar-nav li:hover {
+//       background: rgba(70, 130, 180, 0.5);
+//     }
+//     .navbar-nav li a {
+//       color: white;
+//       line-height: 30px;
+//       padding: 15px 20px;
+//       background: rgba(70, 130, 180, 0.5);
+//       text-align: center;
+//       border: none;
+//     }
+
+//     .navbar-collapse {
+//       border: none;
+//     }
+
+//     #header-video .text h1 {
+//       font-weight: 900;
+//       font-size: 3em;
+//     }
+//     #header-video .text h3 {
+//       font-size: 18px;
+//     }
+//   }

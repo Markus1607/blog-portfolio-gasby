@@ -5,13 +5,12 @@ import Layout from "../components/layout/layout"
 import SEO from "../components/seo"
 import Contact from "../components/contact/contact"
 import About from "../components/about/about"
+import Intro from "../components/intro/intro"
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    {/* <div className={styles.imageWrapper}>
-      <Image />
-    </div> */}
+    <Intro />
     <About />
     <Contact />
   </Layout>
