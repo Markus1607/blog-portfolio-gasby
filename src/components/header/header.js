@@ -1,5 +1,6 @@
 import PropTypes from "prop-types"
 import React from "react"
+import { Link } from "gatsby"
 import styles from "./header.module.scss"
 
 const Navbar = ({ siteTitle }) => (
@@ -32,7 +33,7 @@ const Navbar = ({ siteTitle }) => (
         >
           <ul className={`nav navbar-nav navbar-right ${styles.navbarNav}`}>
             <li className="ab-link">
-              <a href="#">Blog</a>
+              <Link to="/blog">Blog</Link>
             </li>
             <li className="po-link">
               <a href="#about">About</a>
