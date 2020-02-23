@@ -3,7 +3,7 @@ import React from "react"
 import styles from "./about.module.scss"
 
 const About = () => (
-  <section className={styles.about}>
+  <section className={styles.about} id="about">
     <div className="container">
       <h2>About Me</h2>
       <div className="row">

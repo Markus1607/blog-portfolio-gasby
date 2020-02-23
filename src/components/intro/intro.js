@@ -1,8 +1,9 @@
 import React from "react"
+import { Link } from "gatsby"
 import styles from "./intro.module.scss"
 
 const Intro = () => (
-  <section className={styles.intro}>
+  <section className={styles.intro} id="home">
     <video autoPlay={true} loop>
       <source src="../../assets/videos/MP4/typing.mp4" type="video/mp4" />
       Sorry, your browser doesn't support embedded videos.
@@ -11,7 +12,7 @@ const Intro = () => (
       <track
         default
         kind="typing hand"
-        srclang="en"
+        srcLang="en"
         src="../../assets/videos/MP4/typing.vtt"
       />
     </video>
@@ -19,7 +20,9 @@ const Intro = () => (
       <h1>Hi There</h1>
       <h1>I'm Mark Sarpong</h1>
       <h3>Software Developer</h3>
-      <div className={styles.img} />
+      <div className={styles.img}>
+        <a href="#about" />
+      </div>
     </div>
   </section>
 )
