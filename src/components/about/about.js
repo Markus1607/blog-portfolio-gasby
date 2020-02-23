@@ -1,4 +1,3 @@
-import PropTypes from "prop-types"
 import React from "react"
 import styles from "./about.module.scss"
 
@@ -9,8 +8,7 @@ const About = () => (
       <div className="row">
         <div className="col-md-8 col-md-offset-2">
           <p className="text-muted">
-            I am a passionate web developer, with significant experience working
-            on the Front End. I enjoy collaborating within a team, but also
+            I am a passionate web developer, with significant experience working with JavaScript technologies. I enjoy collaborating within a team, but also
             happy to work independently. Aside from programming, I enjoy
             cycling, gaming and watching comedies.
           </p>
@@ -34,7 +32,7 @@ const About = () => (
                 aria-valuemax="100"
                 style={{ width: "90%" }}
               >
-                <span>HTML 5</span>
+                <span>GatsbyJS / GragphQL</span>
               </div>
             </div>
             <div className={styles.progress}>
@@ -58,13 +56,13 @@ const About = () => (
                 aria-valuemax="100"
                 style={{ width: "80%" }}
               >
-                <span>JavaScript</span>
+                <span>NextJS / SSR</span>
               </div>
             </div>
           </div>
         </div>
         <div id="right-in">
-          <div className="col-md-4 ">
+          <div className="col-md-4">
             <div className={styles.progress}>
               <div
                 className={`${styles.customProgress} ${styles.customProgressBar} progress-bar progress-bar-primary progress-bar-striped active`}
@@ -98,7 +96,7 @@ const About = () => (
                 aria-valuemax="100"
                 style={{ width: "80%" }}
               >
-                <span>MongoDB / Mongoose</span>
+                <span>Firebase / MongoDB</span>
               </div>
             </div>
           </div>
@@ -107,13 +105,5 @@ const About = () => (
     </div>
   </section>
 )
-
-About.propTypes = {
-  siteTitle: PropTypes.string,
-}
-
-About.defaultProps = {
-  siteTitle: ``,
-}
 
 export default About

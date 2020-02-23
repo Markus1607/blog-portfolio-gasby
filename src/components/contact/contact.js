@@ -1,4 +1,3 @@
-import PropTypes from "prop-types"
 import React from "react"
 import styles from "./contact.module.scss"
 
@@ -51,13 +50,5 @@ const Contact = () => (
     </div>
   </section>
 )
-
-Contact.propTypes = {
-  siteTitle: PropTypes.string,
-}
-
-Contact.defaultProps = {
-  siteTitle: ``,
-}
 
 export default Contact
