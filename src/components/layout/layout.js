@@ -9,8 +9,6 @@ import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 import styles from "./layout.module.scss"
-
-
 import Navbar from "../header/header"
 
 const Layout = ({ children }) => {

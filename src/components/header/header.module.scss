@@ -1,4 +1,3 @@
-
 .navbar {
   margin-bottom: 0px;
   color: white !important;
@@ -11,7 +10,7 @@
   .navbarBrand {
     color: white !important;
     font-size: 1.5rem !important;
-    line-height: 30px ;
+    line-height: 30px;
 
     &:hover {
       color: white;
@@ -40,8 +39,8 @@
       &::after {
         visibility: visible;
         -webkit-transform: scaleX(0.5);
-            -ms-transform: scaleX(0.5);
-                transform: scaleX(0.5);
+        -ms-transform: scaleX(0.5);
+        transform: scaleX(0.5);
       }
     }
 
@@ -54,11 +53,37 @@
       height: 1px;
       visibility: hidden;
       -webkit-transform: scaleX(0);
-          -ms-transform: scaleX(0);
-              transform: scaleX(0);
+      -ms-transform: scaleX(0);
+      transform: scaleX(0);
       background-color: white;
       -webkit-transition: all 0.3s ease;
-              transition: all 0.3s ease;
+      transition: all 0.3s ease;
     }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .navbar-nav li:hover {
+    background: rgba(70, 130, 180, 0.5);
+  }
+  .navbar-nav li a {
+    color: white;
+    line-height: 30px;
+    padding: 15px 20px;
+    background: rgba(70, 130, 180, 0.5);
+    text-align: center;
+    border: none;
+  }
+
+  .navbar-collapse {
+    border: none;
+  }
+
+  #header-video .text h1 {
+    font-weight: 900;
+    font-size: 3em;
+  }
+  #header-video .text h3 {
+    font-size: 18px;
   }
 }
