@@ -13,10 +13,10 @@ function About() {
         <div className="row">
           <div className="col-md-8 col-md-offset-2">
             <p className="text-muted">
-              I am a passionate web developer, with significant experience
-              working with Javascript technologies. I enjoy collaborating within
-              a team, but also happy to work independently. Aside from
-              programming, I enjoy cycling, gaming and comedy movies.
+              I am a passionate software developer, experienced working with
+              Javascript technologies. I enjoy collaborating within a team, but
+              also happy to work independently. Aside programming, I enjoy
+              cycling, gaming and comedy movies.
             </p>
           </div>
         </div>

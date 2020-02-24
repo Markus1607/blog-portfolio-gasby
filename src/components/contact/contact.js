@@ -15,7 +15,7 @@ function Contact() {
             <h3>Get in touch with me</h3>
             <Animated
               animationIn={state.animate ? "bounceInUp" : null}
-              animationInDuration={state.animate ? 1000 : null}
+              animationInDuration={state.animate ? 700 : null}
               isVisible={state.animate ? true : false}
             >
               <div className={styles.iconsWrapper}>
