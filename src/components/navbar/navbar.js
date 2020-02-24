@@ -1,17 +1,18 @@
 import PropTypes from "prop-types"
 import React, { useContext, useEffect } from "react"
 import { Link } from "gatsby"
-import styles from "./header.module.scss"
+import styles from "./navbar.module.scss"
 import { store } from "../../hooks/store"
 
 function Navbar(props) {
   const { siteTitle } = props
-  const globalState = useContext(store)
-  const { dispatch } = globalState
+  const { dispatch } = useContext(store)
 
-  //Reveal on click
   function activateAnimation() {
-    dispatch({ type: "animate", animate: true })
+    if (dispatch) {
+      //TODO: Fix dispatch becoming undefined some times
+      dispatch({ type: "animate", animate: true })
+    }
   }
 
   //Reveal on scroll
@@ -59,7 +60,7 @@ function Navbar(props) {
               <li className="po-link" onClick={activateAnimation}>
                 <a href="#about">About</a>
               </li>
-              <li className="hi-link">
+              <li className="po-link">
                 <a href="#contact">Contact</a>
               </li>
             </ul>

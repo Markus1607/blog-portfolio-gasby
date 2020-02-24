@@ -20,7 +20,7 @@ const Intro = () => (
       <h1>I'm Mark Sarpong</h1>
       <h3>Software Developer</h3>
       <div className={styles.img}>
-        <a href="#about" />
+        <a href="#about"></a>
       </div>
     </div>
   </section>

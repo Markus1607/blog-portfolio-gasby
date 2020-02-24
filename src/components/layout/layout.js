@@ -9,7 +9,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 import styles from "./layout.module.scss"
-import Navbar from "../header/header"
+import Navbar from "../navbar/navbar"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`

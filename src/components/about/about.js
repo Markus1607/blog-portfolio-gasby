@@ -4,7 +4,7 @@ import { Animated } from "react-animated-css"
 import { store } from "../../hooks/store"
 
 function About() {
-  const globalState = useContext(store)
+  const { state } = useContext(store)
 
   return (
     <section className={styles.about} id="about">
@@ -27,9 +27,9 @@ function About() {
         </div>
         <div className="row">
           <Animated
-            animationIn={globalState.state.animate ? "bounceInLeft" : null}
-            animationInDuration={globalState.state.animate ? 1000 : null}
-            isVisible={globalState.state.animate ? true : false}
+            animationIn={state.animate ? "bounceInLeft" : null}
+            animationInDuration={state.animate ? 1000 : null}
+            isVisible={state.animate ? true : false}
           >
             <div className="col-md-4 col-md-offset-2">
               <div className={styles.progress}>
@@ -71,9 +71,9 @@ function About() {
             </div>
           </Animated>
           <Animated
-            animationIn={globalState.state.animate ? "bounceInRight" : null}
-            animationInDuration={globalState.state.animate ? 1000 : null}
-            isVisible={globalState.state.animate ? true : false}
+            animationIn={state.animate ? "bounceInRight" : null}
+            animationInDuration={state.animate ? 1000 : null}
+            isVisible={state.animate ? true : false}
           >
             <div className="col-md-4">
               <div className={styles.progress}>
