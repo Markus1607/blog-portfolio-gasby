@@ -25,9 +25,7 @@ const Layout = ({ children }) => {
   return (
     <>
       <Navbar siteTitle={data.site.siteMetadata.title} />
-      <div
-        className={styles.wrapper}
-      >
+      <div className={styles.wrapper}>
         <main>{children}</main>
         {/* <footer>
           © {new Date().getFullYear()}, Built with

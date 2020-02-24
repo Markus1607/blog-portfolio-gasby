@@ -1,7 +1,7 @@
 import React, { createContext, useReducer } from "react"
 
 const initialState = {
-    animate: false
+  animate: false,
 }
 const store = createContext(initialState)
 const { Provider } = store
@@ -9,10 +9,10 @@ const { Provider } = store
 const StateProvider = ({ children }) => {
   const [state, dispatch] = useReducer((state, action) => {
     switch (action.type) {
-        case "animate":
-            return {...state, animate: action.animate}
+      case "animate":
+        return { ...state, animate: action.animate }
       default:
-        return state;
+        return state
     }
   }, initialState)
 

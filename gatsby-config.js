@@ -12,14 +12,14 @@ module.exports = {
       options: {
         name: `images`,
         path: `${__dirname}/src/assets/images`,
-      }
+      },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `videos`,
         path: `${__dirname}/src/assets/videos`,
-      }
+      },
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
