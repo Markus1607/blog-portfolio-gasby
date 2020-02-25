@@ -58,6 +58,10 @@ typings/
 .cache/
 public
 
+
+# gatsby files
+.vscode
+
 # Mac files
 .DS_Store
 
